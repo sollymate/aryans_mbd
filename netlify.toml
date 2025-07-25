@@ -1,0 +1,42 @@
+[build]
+  command = "npm run build"
+  publish = ".output/public"
+  functions = ".output/server"
+
+[build.environment]
+  NODE_VERSION = "18"
+
+# Netlify Functions for SSR
+[[functions]]
+  pattern = "/.netlify/functions/*"
+
+# Handle all routes through Nuxt SSR
+[[redirects]]
+  from = "/*"
+  to = "/.netlify/functions/server"
+  status = 200
+  force = false
+
+# Cache static assets
+[[headers]]
+  for = "/assets/*"
+  [headers.values]
+    Cache-Control = "public, max-age=31536000, immutable"
+
+[[headers]]
+  for = "/_nuxt/*"
+  [headers.values]
+    Cache-Control = "public, max-age=31536000, immutable"
+
+# Security headers
+[[headers]]
+  for = "/*"
+  [headers.values]
+    X-Frame-Options = "DENY"
+    X-XSS-Protection = "1; mode=block"
+    X-Content-Type-Options = "nosniff"
+    Strict-Transport-Security = "max-age=31536000; includeSubDomains"
+
+[dev]
+  command = "npm run dev"
+  port = 3000
