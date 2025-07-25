@@ -11,6 +11,7 @@
   --secondary-gradient: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);
   --accent-gradient: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%);
   --gold-gradient: linear-gradient(135deg, #ffd700 0%, #ffb347 100%);
+  --green-gradient: linear-gradient(135deg, #e8f5e8 0%, #f1f8e9 100%);
   --text-dark: #2c3e50;
   --text-light: #ecf0f1;
   --section-padding: 120px 0;
@@ -125,7 +126,7 @@ body {
   border-radius: 2px;
 }
 
-/* Hero Section */
+/* Hero Section (Parallax removed) */
 .hero {
   min-height: 100vh;
   background: var(--primary-gradient);
@@ -133,7 +134,7 @@ body {
   align-items: center;
   position: relative;
   overflow: hidden;
-  padding-top: 80px; /* Add padding to prevent overlap with navbar */
+  padding-top: 80px;
 }
 
 .hero::before {
@@ -249,7 +250,7 @@ body {
 
 /* Fix for about section to prevent overlap */
 .about-section {
-  padding-top: 140px; /* Extra padding to ensure proper spacing */
+  padding-top: 140px;
 }
 
 .section-title {
@@ -322,6 +323,53 @@ body {
   font-size: 1.1rem;
   line-height: 1.8;
   color: #495057;
+}
+
+/* Academic Programs Section */
+.academic-programs {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  gap: 40px;
+  margin: 4rem 0;
+}
+
+.program-card {
+  background: white;
+  padding: 40px;
+  border-radius: 20px;
+  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.08);
+  transition: all 0.4s ease;
+  position: relative;
+  overflow: hidden;
+  border-left: 5px solid;
+}
+
+.program-card:nth-child(1) {
+  border-left-color: #ff6b6b;
+}
+.program-card:nth-child(2) {
+  border-left-color: #4ecdc4;
+}
+.program-card:nth-child(3) {
+  border-left-color: #45b7d1;
+}
+
+.program-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 30px 80px rgba(0, 0, 0, 0.12);
+}
+
+.program-title {
+  font-size: 1.5rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+  color: var(--text-dark);
+}
+
+.program-description {
+  color: #495057;
+  line-height: 1.7;
+  font-size: 1rem;
 }
 
 /* Community Description */
@@ -473,6 +521,14 @@ body {
 .stat-name {
   color: #6c757d;
   font-weight: 500;
+  margin-bottom: 1rem;
+}
+
+.stat-achievement {
+  color: #495057;
+  font-size: 0.9rem;
+  line-height: 1.6;
+  font-style: italic;
 }
 
 /* Infrastructure Grid */
@@ -563,6 +619,101 @@ body {
   line-height: 1.7;
 }
 
+/* Testimonials Section */
+.testimonials-section {
+  background: var(--green-gradient);
+}
+
+.testimonials-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  gap: 30px;
+  margin: 4rem 0;
+}
+
+.testimonial-card {
+  background: white;
+  padding: 35px;
+  border-radius: 20px;
+  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.08);
+  transition: all 0.4s ease;
+  position: relative;
+}
+
+.testimonial-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 30px 80px rgba(0, 0, 0, 0.12);
+}
+
+.testimonial-text {
+  font-style: italic;
+  color: #495057;
+  line-height: 1.7;
+  margin-bottom: 1.5rem;
+  font-size: 1rem;
+}
+
+.testimonial-author {
+  font-weight: 600;
+  color: var(--text-dark);
+  font-size: 1rem;
+}
+
+.testimonial-role {
+  color: #6c757d;
+  font-size: 0.9rem;
+  margin-top: 0.3rem;
+}
+
+/* Enrollment Steps */
+.enrollment-steps {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 30px;
+  margin: 4rem 0;
+}
+
+.step-card {
+  background: rgba(255, 255, 255, 0.9);
+  padding: 30px;
+  border-radius: 20px;
+  backdrop-filter: blur(10px);
+  border: 2px solid rgba(255, 255, 255, 0.3);
+  transition: all 0.3s ease;
+}
+
+.step-card:hover {
+  background: rgba(255, 255, 255, 0.95);
+  transform: translateY(-5px);
+}
+
+.step-number {
+  width: 50px;
+  height: 50px;
+  background: var(--gold-gradient);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 700;
+  font-size: 1.2rem;
+  margin-bottom: 1rem;
+  color: var(--text-dark);
+}
+
+.step-title {
+  font-size: 1.3rem;
+  font-weight: 600;
+  margin-bottom: 0.8rem;
+  color: var(--text-dark);
+}
+
+.step-description {
+  font-size: 1rem;
+  color: #495057;
+  line-height: 1.6;
+}
+
 /* Final CTA Section */
 .final-cta {
   background: var(--primary-gradient);
@@ -626,6 +777,14 @@ body {
 .contact-value {
   font-size: 1.1rem;
   font-weight: 500;
+}
+
+.final-cta-buttons {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  margin-bottom: 3rem;
+  flex-wrap: wrap;
 }
 
 .final-cta-button {
@@ -696,6 +855,23 @@ body {
 
   .values-grid {
     grid-template-columns: 1fr;
+  }
+
+  .academic-programs {
+    grid-template-columns: 1fr;
+  }
+
+  .testimonials-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .enrollment-steps {
+    grid-template-columns: 1fr;
+  }
+
+  .final-cta-buttons {
+    flex-direction: column;
+    align-items: center;
   }
 
   .nav-links {

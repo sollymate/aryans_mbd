@@ -1,6 +1,88 @@
 <template>
-  <!-- Core Values -->
+  <!-- Academic Excellence - Education Designed for Tomorrow's World -->
+  <section class="section" id="academics">
+    <div class="container">
+      <h2 class="section-title fade-in">AN EDUCATION DESIGNED FOR TOMORROW'S WORLD</h2>
+      <p class="section-subtitle fade-in">
+        Our rigorous CBSE curriculum is the bedrock of the Aryans academic experience, but it is only the beginning. We believe the true measure of academic excellence is not just what students know, but what they can do with their knowledge.
+      </p>
+
+      <div class="academic-programs fade-in">
+        <div class="program-card">
+          <h3 class="program-title">Primary Years (Nursery - V)</h3>
+          <p class="program-description">
+            We ignite curiosity through play-based and inquiry-led learning, building strong foundations in literacy, numeracy, and scientific exploration in a nurturing and supportive environment.
+          </p>
+        </div>
+
+        <div class="program-card">
+          <h3 class="program-title">Middle School (VI - VIII)</h3>
+          <p class="program-description">
+            Students transition to more complex subjects, developing critical thinking through project-based learning. We emphasize interdisciplinary connections, showing how science, arts, and humanities work together.
+          </p>
+        </div>
+
+        <div class="program-card">
+          <h3 class="program-title">Senior School (IX - XII)</h3>
+          <p class="program-description">
+            We prepare students for board examinations and beyond. With specialized streams in Science, Commerce, and Humanities, students receive expert guidance and robust career counseling.
+          </p>
+        </div>
+      </div>
+
+      <div class="quote fade-in">
+        "The function of education is to teach one to think intensively and to think critically. Intelligence plus character - that is the goal of true education."
+        <div class="quote-author">- Martin Luther King Jr.</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Proof of Our Approach: Celebrating Our Scholars -->
   <section class="section section-alt">
+    <div class="container">
+      <h2 class="section-title fade-in">PROOF OF OUR APPROACH: CELEBRATING OUR SCHOLARS</h2>
+      <p class="section-subtitle fade-in">
+        Academic Achievement That Speaks Volumes
+      </p>
+
+      <div class="academic-stats fade-in">
+        <div class="stat-card">
+          <div class="stat-percentage">97.4%</div>
+          <div class="stat-stream">Humanities</div>
+          <div class="stat-name">Himani Gautam</div>
+          <div class="stat-achievement">
+            Himani's achievement was complemented by her leadership as the head of the school's award-winning debate club, showcasing a remarkable ability to blend academic depth with powerful communication skills.
+          </div>
+        </div>
+
+        <div class="stat-card">
+          <div class="stat-percentage">96.4%</div>
+          <div class="stat-stream">Commerce</div>
+          <div class="stat-name">Aryan Singh</div>
+          <div class="stat-achievement">
+            Alongside his stellar academic performance, Aryan led a student team that developed a micro-business plan for a local charity, demonstrating exceptional analytical and social entrepreneurial skills.
+          </div>
+        </div>
+
+        <div class="stat-card">
+          <div class="stat-percentage">93.6%</div>
+          <div class="stat-stream">Science</div>
+          <div class="stat-name">Aditya Deshwal</div>
+          <div class="stat-achievement">
+            Aditya's high scores were the result of his passion for inquiry, which he also applied in winning the regional science fair with an innovative project on sustainable water purification.
+          </div>
+        </div>
+      </div>
+
+      <div class="quote fade-in">
+        "Cultivation of mind should be the ultimate aim of human existence."
+        <div class="quote-author">- B.R. Ambedkar</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Core Values -->
+  <section class="section">
     <div class="container">
       <h2 class="section-title fade-in">THE PILLARS OF EXCELLENCE</h2>
       <p class="section-subtitle fade-in">
@@ -61,42 +143,6 @@
         "Try not to become a person of success, but rather try to become a
         person of value."
         <div class="quote-author">- Albert Einstein</div>
-      </div>
-    </div>
-  </section>
-
-  <!-- Academic Excellence -->
-  <section class="section" id="academics">
-    <div class="container">
-      <h2 class="section-title fade-in">WHERE BRILLIANCE BECOMES LEGACY</h2>
-      <p class="section-subtitle fade-in">
-        Academic Achievement That Speaks Volumes
-      </p>
-
-      <div class="academic-stats fade-in">
-        <div class="stat-card">
-          <div class="stat-percentage">97.4%</div>
-          <div class="stat-stream">Humanities</div>
-          <div class="stat-name">Himani Gautam</div>
-        </div>
-
-        <div class="stat-card">
-          <div class="stat-percentage">96.4%</div>
-          <div class="stat-stream">Commerce</div>
-          <div class="stat-name">Aryan Singh</div>
-        </div>
-
-        <div class="stat-card">
-          <div class="stat-percentage">93.6%</div>
-          <div class="stat-stream">Science</div>
-          <div class="stat-name">Aditya Deshwal</div>
-        </div>
-      </div>
-
-      <div class="quote fade-in">
-        "Live as if you were to die tomorrow. Learn as if you were to live
-        forever."
-        <div class="quote-author">- Mahatma Gandhi</div>
       </div>
     </div>
   </section>
@@ -250,7 +296,7 @@
   // Initialize hover effects for cards
   function initializeCardHoverEffects() {
     const cards = document.querySelectorAll(
-      ".value-card, .stat-card, .facility-card, .timeline-item"
+      ".value-card, .stat-card, .facility-card, .timeline-item, .program-card"
     );
 
     cards.forEach((card) => {

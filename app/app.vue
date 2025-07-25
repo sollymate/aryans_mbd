@@ -124,11 +124,11 @@
       });
     }
 
-    // Initialize global animations and effects
+    // Initialize global animations and effects (parallax removed)
     initializeGlobalAnimations();
   });
 
-  // Global animation initialization
+  // Global animation initialization (parallax effect removed)
   function initializeGlobalAnimations() {
     // Scroll Animations
     const observerOptions = {

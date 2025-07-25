@@ -71,16 +71,78 @@
     </div>
   </section>
 
+  <!-- Community Testimonials -->
+  <section class="section testimonials-section" id="community">
+    <div class="container">
+      <h2 class="section-title fade-in">A COMMUNITY BUILT ON PARTNERSHIP AND TRUST</h2>
+      <p class="section-subtitle fade-in">
+        The strength of Aryans International School lies in our community—a dedicated partnership between our passionate educators, our engaged parents, and our ambitious students. But don't just take our word for it.
+      </p>
+
+      <div class="testimonials-grid fade-in">
+        <div class="testimonial-card">
+          <p class="testimonial-text">"When we moved to Moradabad, finding the right school was our biggest worry. From our very first visit, Aryans felt different. The teachers aren't just focused on marks; they genuinely care about my daughter's confidence and happiness. We haven't just found a school; we've found a second family."</p>
+          <div class="testimonial-author">Mrs. Anjali Sharma</div>
+          <div class="testimonial-role">Parent of Aanya, Class V</div>
+        </div>
+
+        <div class="testimonial-card">
+          <p class="testimonial-text">"The emphasis on both modern teaching methods and traditional values is what sets Aryans apart. My son is learning to code and participate in global competitions, but he's also learning respect and responsibility. The school is preparing him for the future without forgetting the importance of character."</p>
+          <div class="testimonial-author">Mr. Rajeev Gupta</div>
+          <div class="testimonial-role">Parent of Rohan, Class IX</div>
+        </div>
+
+        <div class="testimonial-card">
+          <p class="testimonial-text">"Before coming to Aryans, I was very shy. The teachers encouraged me to join the theatre club, and it completely changed me. I've made amazing friends, and I've discovered a confidence I never knew I had. Here, you're encouraged to try new things and not be afraid to fail."</p>
+          <div class="testimonial-author">Priya Singh</div>
+          <div class="testimonial-role">Student, Class XI</div>
+        </div>
+
+        <div class="testimonial-card">
+          <p class="testimonial-text">"As a teacher, having the freedom to be innovative in the classroom is incredible. The school invests in our professional development and trusts us to create engaging lessons that spark genuine curiosity. It's a collaborative environment where both students and teachers are empowered to grow."</p>
+          <div class="testimonial-author">Mr. Alok Tripathi</div>
+          <div class="testimonial-role">Senior Science Faculty</div>
+        </div>
+      </div>
+
+      <div class="quote fade-in">
+        "The best teachers are those who show you where to look but don't tell
+        you what to see."
+        <div class="quote-author">- Alexandra K. Trenfor</div>
+      </div>
+    </div>
+  </section>
+
   <!-- Final CTA -->
   <section class="final-cta" id="contact">
     <div class="container">
       <div class="cta-content">
         <h2 class="cta-title fade-in">
-          YOUR CHILD'S EXTRAORDINARY JOURNEY STARTS HERE
+          TAKE THE NEXT STEP ON YOUR CHILD'S EXTRAORDINARY JOURNEY
         </h2>
         <p class="cta-subtitle fade-in">
-          Don't Just Dream of Excellence - Choose It
+          Choosing the right school is one of the most important decisions your family will make. We are here to make the process clear, simple, and supportive.
         </p>
+
+        <div class="enrollment-steps fade-in">
+          <div class="step-card">
+            <div class="step-number">1</div>
+            <h3 class="step-title">Explore & Discover</h3>
+            <p class="step-description">Schedule a personal tour to experience our campus firsthand, or download our detailed prospectus to review our programs at your convenience.</p>
+          </div>
+
+          <div class="step-card">
+            <div class="step-number">2</div>
+            <h3 class="step-title">Connect & Inquire</h3>
+            <p class="step-description">Speak directly with our friendly admissions team. They are ready to answer your questions and guide you through every step.</p>
+          </div>
+
+          <div class="step-card">
+            <div class="step-number">3</div>
+            <h3 class="step-title">Apply & Enroll</h3>
+            <p class="step-description">Complete our straightforward online application form to begin the official enrollment process for the 2025-26 academic year.</p>
+          </div>
+        </div>
 
         <div class="contact-info fade-in">
           <div class="contact-item">
@@ -110,14 +172,14 @@
           </div>
         </div>
 
-        <a href="#" class="final-cta-button fade-in"
-        >SCHEDULE YOUR VISIT TODAY</a
-        >
+        <div class="final-cta-buttons fade-in">
+          <a href="#" class="final-cta-button">SCHEDULE YOUR TOUR TODAY</a>
+          <a href="#" class="final-cta-button">APPLY ONLINE NOW</a>
+        </div>
 
         <div class="quote fade-in cta-quote">
-          "Every child is gifted; they just unwrap their packages at different
-          times."
-          <div class="quote-author">- Unknown</div>
+          "Education is something which ought to be brought within the reach of every one."
+          <div class="quote-author">- B.R. Ambedkar</div>
         </div>
 
         <div class="fade-in aryans-promise">

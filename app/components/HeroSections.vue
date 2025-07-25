@@ -48,10 +48,8 @@
       </div>
 
       <div class="quote fade-in">
-        "The function of education is to teach one to think intensively and to
-        think critically. Intelligence plus character - that is the goal of
-        true education."
-        <div class="quote-author">- Martin Luther King Jr.</div>
+        "By education I mean an all-round drawing out of the best in child and man—body, mind and spirit."
+        <div class="quote-author">- Mahatma Gandhi</div>
       </div>
     </div>
   </section>
@@ -59,22 +57,10 @@
 
 <script setup>
   onMounted(() => {
-    initializeParallaxEffects()
     initializeHeroAnimations()
   })
 
-  // Parallax effects for hero section
-  function initializeParallaxEffects() {
-    window.addEventListener("scroll", () => {
-      const scrolled = window.pageYOffset;
-      const hero = document.querySelector(".hero");
-      if (hero && scrolled < window.innerHeight) {
-        hero.style.transform = `translateY(${scrolled * 0.5}px)`;
-      }
-    });
-  }
-
-  // Hero section specific animations
+  // Hero section specific animations (parallax removed)
   function initializeHeroAnimations() {
     const heroContent = document.querySelector('.hero-content');
     if (heroContent) {
