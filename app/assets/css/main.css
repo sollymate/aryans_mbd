@@ -6,14 +6,36 @@
   box-sizing: border-box;
 }
 
+/*:root {*/
+/*  --primary-gradient: linear-gradient(135deg, #667eea 0%, #764ba2 100%);*/
+/*  --secondary-gradient: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);*/
+/*  --accent-gradient: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%);*/
+/*  --gold-gradient: linear-gradient(135deg, #ffd700 0%, #ffb347 100%);*/
+/*  --green-gradient: linear-gradient(135deg, #e8f5e8 0%, #f1f8e9 100%);*/
+/*  --text-dark: #2c3e50;*/
+/*  --text-light: #ecf0f1;*/
+/*  --section-padding: 120px 0;*/
+/*}*/
+
 :root {
-  --primary-gradient: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-  --secondary-gradient: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);
-  --accent-gradient: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%);
-  --gold-gradient: linear-gradient(135deg, #ffd700 0%, #ffb347 100%);
-  --green-gradient: linear-gradient(135deg, #e8f5e8 0%, #f1f8e9 100%);
+  --primary-gradient: linear-gradient(135deg, #66cdaa 0%, #66cccc 100%);
+/*  --secondary-gradient: linear-gradient(135deg, #ffb793 0%, #f3f3b5 100%);*/
+  --secondary-gradient: linear-gradient(135deg, #ff8a80 0%, #ffab91 100%);
+  --accent-gradient: linear-gradient(135deg, #66cccc 0%, #66cdaa 100%);
+  --gold-gradient: linear-gradient(135deg, #ff8a80 0%, #ffab91 100%);
+  --green-gradient: linear-gradient(135deg, #d8e4d4 0%, #f3f3b5 100%);
+
+  /* Dark backgrounds for better text readability */
+  --quote-dark-bg: linear-gradient(135deg, #2c5f4a 0%, #3e6b5c 100%);
+  --quote-medium-bg: linear-gradient(135deg, #5a8f7b 0%, #66cdaa 100%);
+
+  /* Text colors */
   --text-dark: #2c3e50;
-  --text-light: #ecf0f1;
+  --text-light: #ffffff;
+  --text-medium: #495057;
+  --text-on-dark: #ffffff;
+
+  /* Spacing */
   --section-padding: 120px 0;
 }
 
@@ -207,6 +229,27 @@ body {
   font-style: italic;
 }
 
+/*.hero-cta {*/
+/*  display: inline-flex;*/
+/*  align-items: center;*/
+/*  gap: 15px;*/
+/*  background: var(--gold-gradient);*/
+/*  color: var(--text-dark);*/
+/*  padding: 20px 40px;*/
+/*  border-radius: 60px;*/
+/*  text-decoration: none;*/
+/*  font-weight: 700;*/
+/*  font-size: 1.1rem;*/
+/*  transition: all 0.4s ease;*/
+/*  box-shadow: 0 20px 60px rgba(255, 215, 0, 0.3);*/
+/*}*/
+
+/*.hero-cta:hover {*/
+/*  transform: translateY(-5px);*/
+/*  box-shadow: 0 30px 80px rgba(255, 215, 0, 0.4);*/
+/*}*/
+
+/* AFTER (coral shadow that matches your theme): */
 .hero-cta {
   display: inline-flex;
   align-items: center;
@@ -219,12 +262,12 @@ body {
   font-weight: 700;
   font-size: 1.1rem;
   transition: all 0.4s ease;
-  box-shadow: 0 20px 60px rgba(255, 215, 0, 0.3);
+  box-shadow: 0 20px 60px rgba(255, 138, 128, 0.3); /* ← NEW CORAL SHADOW */
 }
 
 .hero-cta:hover {
   transform: translateY(-5px);
-  box-shadow: 0 30px 80px rgba(255, 215, 0, 0.4);
+  box-shadow: 0 30px 80px rgba(255, 138, 128, 0.4); /* ← NEW CORAL SHADOW */
 }
 
 .hero-quote {
